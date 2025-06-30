@@ -2,6 +2,8 @@
 
 - Create React App (npx create-react-app netflix-gpt)
 - Configured Tailwindcss 
+- Header
+    
 
 # Features
 -Login/Sign
@@ -15,5 +17,5 @@
         - Movie Suggestions
             - Movie Lists * N
 - NetflixGPT
-    - Search Bar
+    - Search Bclar
     = Movie Suggestions
