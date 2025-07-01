@@ -3,7 +3,7 @@ import {OPENAI_KEY} from "./constants"
 
 const openai = new OpenAI({
   apiKey: OPENAI_KEY,
-  //dangerouslyAllowBrowser: true
+  dangerouslyAllowBrowser: true
 });
 
 export default openai;
