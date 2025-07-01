@@ -1,4 +1,4 @@
-#Netflix GPT
+# Netflix GPT
 
 - Create React App (npx create-react-app netflix-gpt)
 - Configured Tailwindcss 

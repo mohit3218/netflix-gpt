@@ -22,3 +22,5 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "spanish", name: "Spanish" },
   { identifier: "fn", name: "French" },
 ];
+
+export const OPENAI_KEY = "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";
