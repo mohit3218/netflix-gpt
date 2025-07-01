@@ -10,7 +10,7 @@ import { auth } from "../utlis/firebase";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utlis/userSlice";
-import { USER_AVATAR } from "../utlis/constants";
+import { BG_URL, USER_AVATAR } from "../utlis/constants";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -103,7 +103,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img src="/netflix-bg-img.jpg" alt="Netflix-logo" />
+        <img src={BG_URL} alt="Netflix-logo" />
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}
