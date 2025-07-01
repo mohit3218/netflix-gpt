@@ -11,6 +11,7 @@ import { toggleGptSearchView } from "../utlis/gptSlice";
 import { changeLanguage } from "../utlis/configSlice";
 
 const Header = () => {
+
   const navigate = useNavigate();
   const dispacth = useDispatch();
   const user = useSelector((store) => store.user);
