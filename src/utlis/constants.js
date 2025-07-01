@@ -21,8 +21,4 @@ export const SUPPORTED_LANGUAGES = [
   { identifier: "fn", name: "French" },
 ];
 
-<<<<<<< HEAD
-export const OPENAI_KEY = `${process.env.REACT_APP_OPENAI_API_KEY}`;
-=======
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
->>>>>>> e94c598 (1.) Secure openAI and TMDB API key)
