@@ -24,7 +24,14 @@
 - Custom hook for fetch data for trailer video
 - Update Store with the Trailer video
 - Embedded the youtube video and make it autoplay and mute
-
+- Build the secondary component
+- Build Movie List
+- Build Movie Card
+- TMDB Image CDN URL
+- useNowPlayingMovies custom hook
+- usePopularMovies Movies custom hook
+- useTopRatedMovies custom hook
+- useUpComingMovies custom hook
 
 
 
