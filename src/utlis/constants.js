@@ -23,4 +23,4 @@ export const SUPPORTED_LANGUAGES = [
 
 export const OPENAI_KEY = `${process.env.REACT_APP_OPENAI_KEY}`
 
-export const ERROR_404_URL = "/404.avif";
+export const ERROR_404_URL = "/photo-404.jpeg";

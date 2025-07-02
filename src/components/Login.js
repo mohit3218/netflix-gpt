@@ -100,55 +100,83 @@ const Login = () => {
     setIsSignInForm(!isSignInForm);
   };
   return (
-    <div>
-      <Header />
-      <div className="absolute">
-        <img src={BG_URL} alt="Netflix-logo" />
-      </div>
-      <form
-        onSubmit={(e) => e.preventDefault()}
-        className="w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white rounded-lg bg-opacity-85"
-      >
-        <h1 className="font-bold text-3xl py-4">
-          {isSignInForm ? "Sign In" : "Sign Up"}
-        </h1>
+    <div className="relative min-h-screen">
+  {/* Background Image */}
+  <div className="absolute inset-0 -z-10">
+    <img
+      src={BG_URL}
+      alt="Netflix BG"
+      className="w-full h-full object-cover"
+    />
+  </div>
 
-        {!isSignInForm && (
-          <input
-            ref={name}
-            type="text"
-            placeholder="Full Name"
-            className="p-4 my-4 w-full bg-gray-700"
-          />
-        )}
+  {/* Header */}
+  <Header />
 
+  {/* Form Container */}
+  <div className="flex justify-center items-center min-h-screen px-4">
+    <form
+      onSubmit={(e) => e.preventDefault()}
+      className="w-full max-w-md bg-black bg-opacity-80 text-white p-6 sm:p-10 rounded-md"
+    >
+      {/* Title */}
+      <h1 className="text-2xl sm:text-3xl font-bold mb-6 text-center">
+        {isSignInForm ? "Sign In" : "Sign Up"}
+      </h1>
+
+      {/* Full Name (Sign Up Only) */}
+      {!isSignInForm && (
         <input
-          ref={email}
+          ref={name}
           type="text"
-          placeholder="Email Address"
-          className="p-4 my-4 w-full bg-gray-700"
+          placeholder="Full Name"
+          className="w-full p-4 mb-4 bg-gray-700 rounded"
         />
+      )}
 
-        <input
-          ref={password}
-          type="password"
-          placeholder="Password"
-          className="p-4 my-4 w-full bg-gray-700"
-        />
-        <p className="text-red-500 text-lg font-bold">{errorMessage}</p>
-        <button
-          className="p-4 my-6 rounded-lg bg-red-700 w-full"
-          onClick={(e) => handleButtonClick()}
-        >
-          {isSignInForm ? "Sign In" : "Sign Up"}
-        </button>
-        <p className="py-4 cursor-pointer" onClick={toggleSignInFrom}>
-          {isSignInForm
-            ? "New to Netflix? Sing Up Now"
-            : "Already registered? Sing In Now"}
-        </p>
-      </form>
-    </div>
+      {/* Email */}
+      <input
+        ref={email}
+        type="email"
+        placeholder="Email Address"
+        className="w-full p-4 mb-4 bg-gray-700 rounded"
+      />
+
+      {/* Password */}
+      <input
+        ref={password}
+        type="password"
+        placeholder="Password"
+        className="w-full p-4 mb-4 bg-gray-700 rounded"
+      />
+
+      {/* Error */}
+      {errorMessage && (
+        <p className="text-red-500 text-sm mb-4">{errorMessage}</p>
+      )}
+
+      {/* Submit */}
+      <button
+        onClick={handleButtonClick}
+        className="w-full p-4 bg-red-700 hover:bg-red-800 rounded mb-4 transition"
+      >
+        {isSignInForm ? "Sign In" : "Sign Up"}
+      </button>
+
+      {/* Toggle Text */}
+      <p
+        className="text-sm text-center hover:underline cursor-pointer"
+        onClick={toggleSignInFrom}
+      >
+        {isSignInForm
+          ? "New to Netflix? Sign Up Now"
+          : "Already registered? Sign In Now"}
+      </p>
+    </form>
+  </div>
+</div>
+
+
   );
 };
 
