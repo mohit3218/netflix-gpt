@@ -30,11 +30,23 @@
 - TMDB Image CDN URL
 - useNowPlayingMovies custom hook
 - usePopularMovies Movies custom hook
-- useTopRatedMovies custom hook
-- useUpComingMovies custom hook
 - GPT Search Page
 - GPT search Bar
 - (Bonus) Multi-language Features in our App
+- Get Open AI Api Key
+- Get Search API Call
+- Fetched gptMovieSuggestions from TMDB
+- Created gptSlice added data
+- Memoization
+- Added .env file
+- Added .env file to git ignore
+- Made ore site responsive
+
+# Enhancement
+- useTopRatedMovies custom hook
+- useUpComingMovies custom hook
+- Scroller added auto run
+- Scoller stop on Hover
 
 
 
